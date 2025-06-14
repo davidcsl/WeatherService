@@ -1,6 +1,6 @@
 package com.david.weather_service.service;
 
-import com.david.weather_service.model.OpenWeatherResponse;
+import com.david.weather_service.model.dto.OpenWeatherResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

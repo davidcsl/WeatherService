@@ -1,6 +1,6 @@
 package com.david.weather_service.controller;
 
-import com.david.weather_service.model.WeatherResponse;
+import com.david.weather_service.model.dto.WeatherResponse;
 import com.david.weather_service.service.WeatherService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

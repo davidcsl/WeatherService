@@ -1,4 +1,4 @@
-package com.david.weather_service.model;
+package com.david.weather_service.model.dto;
 
 import lombok.Getter;
 import lombok.Setter;
