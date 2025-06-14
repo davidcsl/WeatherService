@@ -1,1 +1,7 @@
-spring.application.name=weather-service
+spring:
+  application:
+    name: weather-service
+
+open-weather:
+  url: http://api.openweathermap.org/data/2.5/weather?q=%s,%s&appid=%s
+  appid: 17ee8632b7d6162e20219187ce635f20
