@@ -27,7 +27,7 @@ public class WeatherController {
       WeatherResponse weatherResponse = weatherService.processQuery(city, country, apiKey);
       return ResponseEntity.ok(weatherResponse);
     } catch (Exception e) {
-      return ResponseEntity.status(404).body("Failed to retrieve data");
+      return ResponseEntity.status(400).body(e.getMessage());
     }
   }
 }
