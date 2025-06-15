@@ -20,11 +20,10 @@ public class WeatherController {
                                    @PathVariable String country,
                                    @RequestParam String apiKey) {
 
-    log.info("Weather from {},{} is ok", country, city);
-    log.info("API Key from user is {}", apiKey);
+    log.info("Weather from {},{} requested", country, city);
 
     try {
-      WeatherResponse weatherResponse = weatherService.processQuery(city, country, apiKey);
+      WeatherResponse weatherResponse = weatherService.processQuery(city, country);
       return ResponseEntity.ok(weatherResponse);
     } catch (Exception e) {
       return ResponseEntity.status(400).body(e.getMessage());

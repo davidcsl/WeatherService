@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface WeatherRepository extends JpaRepository<WeatherEntity, String> {
+  WeatherEntity findByCountryAndCity(String country, String city);
 }
